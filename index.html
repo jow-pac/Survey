@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Legends Survey</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #ffffff;
+      color: #434f48;
+      margin: 0;
+      padding: 20px;
+    }
+    h1#title {
+      color: #1DB954;
+      text-align: center;
+    }
+    p#description {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    form#survey-form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #618770;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: #404040;
+      color: #fff;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+    }
+    button#submit {
+      background-color: #1DB954;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button#submit:hover {
+      background-color: #1ed760;
+    }
+    img.survey-banner {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">Music Legends Survey</h1>
+  <p id="description">Tell us how you vibe with Drake, Kendrick, J. Cole, and Eminem. Your feedback helps us build better playlists and experiences!</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+    <label id="email-label" for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+    <label id="number-label" for="number">Your Age</label>
+    <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age" />
+
+    <img src="background.png" alt="Music Legends" class="survey-banner" />
+
+    <label for="dropdown">Who's your favorite artist?</label>
+    <select id="dropdown" name="favorite-artist">
+      <option value="drake">Drake</option>
+      <option value="kendrick">Kendrick Lamar</option>
+      <option value="jcole">J. Cole</option>
+      <option value="eminem">Eminem</option>
+    </select>
+
+    <label>Would you recommend their music to a friend?</label>
+    <input type="radio" id="recommend-yes" name="recommend" value="definitely" />
+    <label for="recommend-yes">Definitely</label>
+    <input type="radio" id="recommend-maybe" name="recommend" value="maybe" />
+    <label for="recommend-maybe">Maybe</label>
+
+    <label>What do you love most? (Check all that apply)</label>
+    <input type="checkbox" id="lyrics" name="features" value="lyrics" />
+    <label for="lyrics">Lyrics</label>
+    <input type="checkbox" id="beats" name="features" value="beats" />
+    <label for="beats">Beats</label>
+    <input type="checkbox" id="flow" name="features" value="flow" />
+    <label for="flow">Flow</label>
+    <input type="checkbox" id="message" name="features" value="message" />
+    <label for="message">Message</label>
+
+    <label for="comments">Any other thoughts?</label>
+    <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Share your vibe..."></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+</body>
+</html>
+
+
